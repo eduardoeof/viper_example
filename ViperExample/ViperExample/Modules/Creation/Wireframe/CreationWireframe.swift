@@ -12,6 +12,8 @@ class CreationWireframe : CreationWireframeProtocol {
     
     private weak var navigationController: UINavigationController?
     
+    // MARK: CreationWireframeProtocol
+    
     class func pushCreation(navigationController: UINavigationController) {
         let wireframe = CreationWireframe()
         let view = CreationView()
@@ -27,6 +29,10 @@ class CreationWireframe : CreationWireframeProtocol {
         wireframe.navigationController = navigationController
         
         navigationController.pushViewController(view, animated: true)
+    }
+    
+    func popCreation() {
+        navigationController?.popViewControllerAnimated(true)
     }
     
 }

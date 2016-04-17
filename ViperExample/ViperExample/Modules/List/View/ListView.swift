@@ -22,7 +22,10 @@ class ListView : UIViewController {
         
         setupNavigationBar()
         setupTableView()
-        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         presenter?.updateView()
     }
     

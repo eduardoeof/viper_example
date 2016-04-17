@@ -10,6 +10,7 @@ import UIKit
 
 protocol CreationWireframeProtocol : class {
     static func pushCreation(navigationController: UINavigationController)
+    func popCreation()
 }
 
 protocol CreationViewProtocol : class {

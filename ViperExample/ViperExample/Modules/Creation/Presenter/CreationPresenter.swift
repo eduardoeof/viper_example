@@ -27,7 +27,7 @@ class CreationPresenter : CreationPresenterProtocol {
 extension CreationPresenter : CreationInteractorOutputProtocol {
 
     func didInsertToDo() {
-        print("ToDo Created!")
+        wireframe?.popCreation()
     }
     
 }
