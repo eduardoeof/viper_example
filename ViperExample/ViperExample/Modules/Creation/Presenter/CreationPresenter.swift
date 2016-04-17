@@ -16,13 +16,18 @@ class CreationPresenter : CreationPresenterProtocol {
     
     // MARK: CreationPresenterProtocol
     
-    func createToDo(text: String) {
-        interactor?.insertToDo(text)
+    func didTapCreateButton(text: String) {
+        interactor?.createToDo(text)
     }
+    
 }
 
 // MARK: CreationInteractorOutputProtocol
 
 extension CreationPresenter : CreationInteractorOutputProtocol {
+
+    func didInsertToDo() {
+        print("ToDo Created!")
+    }
     
 }

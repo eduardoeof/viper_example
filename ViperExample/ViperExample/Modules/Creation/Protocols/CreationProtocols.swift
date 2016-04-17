@@ -22,15 +22,15 @@ protocol CreationPresenterProtocol : class {
     
     weak var view: CreationViewProtocol? { get set }
     
-    func createToDo(text: String)
+    func didTapCreateButton(text: String)
 }
 
 protocol CreationInteractorInputProtocol : class {
     weak var presenter: CreationInteractorOutputProtocol? { get set }
     
-    func insertToDo(text: String)
+    func createToDo(text: String)
 }
 
 protocol CreationInteractorOutputProtocol : class {
-    
+    func didInsertToDo()
 }

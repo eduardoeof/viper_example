@@ -30,7 +30,7 @@ class CreationView : UIViewController, CreationViewProtocol {
             return
         }
         
-        presenter?.createToDo(text)
+        presenter?.didTapCreateButton(text)
     }
     
     // MARK: Private

@@ -11,9 +11,22 @@ import Foundation
 class CreationInteractor : CreationInteractorInputProtocol {
     weak var presenter: CreationInteractorOutputProtocol?
     
+    let dao: ToDoDAO
+    
+    init(dao: ToDoDAO) {
+        self.dao = dao
+    }
+    
+    convenience init() {
+        self.init(dao: ToDoMemoryDAO())
+    }
+    
     // MARK: CreationInteractorInputProtocol
     
-    func insertToDo(text: String) {
+    func createToDo(text: String) {
+        let todo = ToDo(text: text)
+        dao.saveToDo(todo)
         
+        presenter?.didInsertToDo()
     }
 }

@@ -9,5 +9,6 @@
 import Foundation
 
 protocol ToDoDAO {
+    func saveToDo(todo: ToDo)
     func loadToDos() -> [ToDo]?
 }
