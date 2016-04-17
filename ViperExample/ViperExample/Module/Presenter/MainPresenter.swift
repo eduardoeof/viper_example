@@ -31,6 +31,10 @@ extension MainPresenter : MainInteractorOutputProtocol {
         view?.showToDoList(textList)
     }
     
+    func didFailFetchToDoList(error: ErrorType) {
+        
+    }
+    
     // MARK: Private
     
     private func extractTextsFromToDoList(toDoList: [ToDo]) -> [String] {

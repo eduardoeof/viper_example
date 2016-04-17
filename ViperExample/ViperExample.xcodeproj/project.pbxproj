@@ -19,6 +19,9 @@
 		3347C20A1CC3C36B00164BE3 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3347C2091CC3C36B00164BE3 /* MainInteractor.swift */; };
 		3347C20C1CC3CBF900164BE3 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3347C20B1CC3CBF900164BE3 /* MainView.xib */; };
 		3347C20E1CC3D9FE00164BE3 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3347C20D1CC3D9FE00164BE3 /* ToDo.swift */; };
+		3347C2181CC3DF6E00164BE3 /* ToDoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3347C2171CC3DF6E00164BE3 /* ToDoError.swift */; };
+		3347C21B1CC3DFE400164BE3 /* ToDoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3347C2191CC3DFE400164BE3 /* ToDoDAO.swift */; };
+		3347C21C1CC3DFE400164BE3 /* ToDoMemoryDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3347C21A1CC3DFE400164BE3 /* ToDoMemoryDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		3347C2091CC3C36B00164BE3 /* MainInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		3347C20B1CC3CBF900164BE3 /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		3347C20D1CC3D9FE00164BE3 /* ToDo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		3347C2171CC3DF6E00164BE3 /* ToDoError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoError.swift; path = Enums/ToDoError.swift; sourceTree = "<group>"; };
+		3347C2191CC3DFE400164BE3 /* ToDoDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoDAO.swift; sourceTree = "<group>"; };
+		3347C21A1CC3DFE400164BE3 /* ToDoMemoryDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoMemoryDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,8 @@
 		3347C1C61CC30EBB00164BE3 /* ViperExample */ = {
 			isa = PBXGroup;
 			children = (
+				3347C2141CC3DF0E00164BE3 /* Enums */,
+				3347C20F1CC3DCCD00164BE3 /* DAO */,
 				3347C1C71CC30EBB00164BE3 /* AppDelegate.swift */,
 				3347C1FA1CC3132500164BE3 /* Module */,
 				3347C1F61CC310AA00164BE3 /* Resourses */,
@@ -202,6 +210,23 @@
 				3347C20D1CC3D9FE00164BE3 /* ToDo.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		3347C20F1CC3DCCD00164BE3 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				3347C2191CC3DFE400164BE3 /* ToDoDAO.swift */,
+				3347C21A1CC3DFE400164BE3 /* ToDoMemoryDAO.swift */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		3347C2141CC3DF0E00164BE3 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				3347C2171CC3DF6E00164BE3 /* ToDoError.swift */,
+			);
+			name = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,7 +361,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3347C2081CC3C34600164BE3 /* MainPresenter.swift in Sources */,
+				3347C21B1CC3DFE400164BE3 /* ToDoDAO.swift in Sources */,
 				3347C20E1CC3D9FE00164BE3 /* ToDo.swift in Sources */,
+				3347C21C1CC3DFE400164BE3 /* ToDoMemoryDAO.swift in Sources */,
+				3347C2181CC3DF6E00164BE3 /* ToDoError.swift in Sources */,
 				3347C2041CC3C16700164BE3 /* MainWireframe.swift in Sources */,
 				3347C2061CC3C32700164BE3 /* MainView.swift in Sources */,
 				3347C2021CC3151200164BE3 /* MainProtocol.swift in Sources */,

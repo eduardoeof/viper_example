@@ -36,4 +36,5 @@ protocol MainInteractorInputProtocol : class {
 
 protocol MainInteractorOutputProtocol : class {
     func didFetchToDoList(list: [ToDo])
+    func didFailFetchToDoList(error: ErrorType)
 }

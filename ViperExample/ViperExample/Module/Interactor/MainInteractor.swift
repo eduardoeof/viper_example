@@ -11,13 +11,23 @@ import Foundation
 class MainInteractor : MainInteractorInputProtocol {
     weak var presenter: MainInteractorOutputProtocol?
     
+    private let dao: ToDoDAO
+    
+    init(dao: ToDoDAO) {
+        self.dao = dao
+    }
+
+    convenience init() {
+        self.init(dao: ToDoMemoryDAO())
+    }
+    
     // MainInteractorInputProtocol
     
     func fetchToDoList() {
-        let todo1 = ToDo(text: "Do it")
-        let todo2 = ToDo(text: "Do that")
-        let todo3 = ToDo(text: "Do everything")
-        let list = [todo1, todo2, todo3]
+        guard let list = dao.loadToDos() else {
+            presenter?.didFailFetchToDoList(ToDoError.EmptyToDoList)
+            return
+        }
         
         presenter?.didFetchToDoList(list)
     }
