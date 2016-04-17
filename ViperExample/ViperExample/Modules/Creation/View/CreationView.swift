@@ -19,12 +19,35 @@ class CreationView : UIViewController, CreationViewProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        setupNavigationBar()
+        setupTextField()
     }
     
     // MARK: IBAction
     
     @IBAction func tapCreateButton() {
-        print("Click!!!!!!")
+        
     }
+    
+    // MARK: Private
+    
+    private func setupNavigationBar() {
+        title = "Create To Do"
+    }
+    
+    private func setupTextField() {
+        textField.delegate = self
+    }
+}
+
+extension CreationView : UITextFieldDelegate {
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if self.textField == textField {
+            textField.resignFirstResponder()
+        }
+        
+        return false
+    }
+    
 }

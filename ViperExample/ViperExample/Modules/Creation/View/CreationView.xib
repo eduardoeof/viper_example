@@ -20,13 +20,13 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Kx-Rp-PTX">
                     <rect key="frame" x="153" y="236" width="295" height="128"/>
                     <subviews>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tgA-p4-bYu">
-                            <rect key="frame" x="10" y="36" width="275" height="30"/>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tgA-p4-bYu">
+                            <rect key="frame" x="10" y="41" width="275" height="30"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXI-Q3-n7V">
-                            <rect key="frame" x="10" y="76" width="275" height="42"/>
+                            <rect key="frame" x="10" y="81" width="275" height="37"/>
                             <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                             <state key="normal" title="Create">
@@ -50,7 +50,7 @@
                         <constraint firstAttribute="trailing" secondItem="xXI-Q3-n7V" secondAttribute="trailing" constant="10" id="Rfr-x2-daH"/>
                         <constraint firstItem="xXI-Q3-n7V" firstAttribute="leading" secondItem="6Kx-Rp-PTX" secondAttribute="leading" constant="10" id="SYt-Uo-8Hc"/>
                         <constraint firstItem="nl6-Sq-s5h" firstAttribute="top" secondItem="6Kx-Rp-PTX" secondAttribute="top" constant="10" id="Wne-mw-2cq"/>
-                        <constraint firstItem="tgA-p4-bYu" firstAttribute="top" secondItem="nl6-Sq-s5h" secondAttribute="bottom" constant="5" id="cjX-IF-hDF"/>
+                        <constraint firstItem="tgA-p4-bYu" firstAttribute="top" secondItem="nl6-Sq-s5h" secondAttribute="bottom" constant="10" id="cjX-IF-hDF"/>
                         <constraint firstItem="nl6-Sq-s5h" firstAttribute="leading" secondItem="6Kx-Rp-PTX" secondAttribute="leading" constant="10" id="fc1-PM-g0T"/>
                         <constraint firstItem="tgA-p4-bYu" firstAttribute="leading" secondItem="6Kx-Rp-PTX" secondAttribute="leading" constant="10" id="gaG-Di-VXa"/>
                         <constraint firstItem="xXI-Q3-n7V" firstAttribute="top" secondItem="tgA-p4-bYu" secondAttribute="bottom" constant="10" id="grh-JI-J3R"/>
