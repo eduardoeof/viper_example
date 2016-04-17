@@ -42,7 +42,7 @@
 		3347C1E31CC30EBB00164BE3 /* ViperExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3347C1E71CC30EBB00164BE3 /* ViperExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperExampleUITests.swift; sourceTree = "<group>"; };
 		3347C1E91CC30EBB00164BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3347C1F71CC3114100164BE3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3347C1F71CC3114100164BE3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,6 @@
 		3347C1BB1CC30EBB00164BE3 = {
 			isa = PBXGroup;
 			children = (
-				3347C1F71CC3114100164BE3 /* Default-568h@2x.png */,
 				3347C1C61CC30EBB00164BE3 /* ViperExample */,
 				3347C1DB1CC30EBB00164BE3 /* ViperExampleTests */,
 				3347C1E61CC30EBB00164BE3 /* ViperExampleUITests */,
@@ -121,6 +120,7 @@
 		3347C1F61CC310AA00164BE3 /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
+				3347C1F71CC3114100164BE3 /* Default-568h@2x.png */,
 				3347C1CE1CC30EBB00164BE3 /* Assets.xcassets */,
 				3347C1D31CC30EBB00164BE3 /* Info.plist */,
 			);
@@ -463,6 +463,7 @@
 				3347C1EE1CC30EBB00164BE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3347C1EF1CC30EBB00164BE3 /* Build configuration list for PBXNativeTarget "ViperExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +472,7 @@
 				3347C1F11CC30EBB00164BE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3347C1F21CC30EBB00164BE3 /* Build configuration list for PBXNativeTarget "ViperExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +481,7 @@
 				3347C1F41CC30EBB00164BE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
