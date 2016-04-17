@@ -17,7 +17,7 @@ class CreationPresenter : CreationPresenterProtocol {
     // MARK: CreationPresenterProtocol
     
     func createToDo(text: String) {
-        
+        interactor?.insertToDo(text)
     }
 }
 

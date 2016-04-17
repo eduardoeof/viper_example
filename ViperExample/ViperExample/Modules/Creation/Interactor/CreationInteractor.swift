@@ -10,4 +10,10 @@ import Foundation
 
 class CreationInteractor : CreationInteractorInputProtocol {
     weak var presenter: CreationInteractorOutputProtocol?
+    
+    // MARK: CreationInteractorInputProtocol
+    
+    func insertToDo(text: String) {
+        
+    }
 }

@@ -27,6 +27,8 @@ protocol CreationPresenterProtocol : class {
 
 protocol CreationInteractorInputProtocol : class {
     weak var presenter: CreationInteractorOutputProtocol? { get set }
+    
+    func insertToDo(text: String)
 }
 
 protocol CreationInteractorOutputProtocol : class {
