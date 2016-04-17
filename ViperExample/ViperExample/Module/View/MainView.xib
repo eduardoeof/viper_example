@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainView" customModule="ViperExample" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="kQp-cC-RWq" id="TJ6-h9-O4c"/>
                 <outlet property="view" destination="iN0-l3-epB" id="dVe-jS-lwp"/>
             </connections>
         </placeholder>
@@ -14,7 +15,32 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kQp-cC-RWq">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="kQp-cC-RWq" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="7wB-hf-6PF"/>
+                <constraint firstAttribute="trailing" secondItem="kQp-cC-RWq" secondAttribute="trailing" id="HN5-kI-o77"/>
+                <constraint firstItem="kQp-cC-RWq" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="MuA-ln-GJx"/>
+                <constraint firstItem="kQp-cC-RWq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="51" id="bwK-iS-5nh"/>
+                <constraint firstItem="kQp-cC-RWq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dLo-55-vG0"/>
+                <constraint firstItem="kQp-cC-RWq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="e6U-rr-BfM"/>
+                <constraint firstAttribute="bottom" secondItem="kQp-cC-RWq" secondAttribute="bottom" id="u5H-6S-fAW"/>
+                <constraint firstItem="kQp-cC-RWq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="62" id="u7N-aF-mTm"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="7wB-hf-6PF"/>
+                    <exclude reference="MuA-ln-GJx"/>
+                    <exclude reference="bwK-iS-5nh"/>
+                    <exclude reference="u7N-aF-mTm"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="132" y="63"/>
         </view>
     </objects>
 </document>

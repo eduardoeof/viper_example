@@ -10,13 +10,13 @@ import UIKit
 
 class MainView: UIViewController, MainViewProtocol {
     var presenter: MainPresenterProtocol?
+
+    @IBOutlet weak var tableView: UITableView!
     
     // MARK: UIViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = UIColor.redColor()
     }
     
 }
