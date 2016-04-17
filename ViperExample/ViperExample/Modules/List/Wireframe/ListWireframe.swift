@@ -29,5 +29,5 @@ class ListWireframe : ListWireframeProtocol {
         wireframe.navigationController = navigationController
         window.rootViewController = navigationController
     }
-
+    
 }

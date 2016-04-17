@@ -20,18 +20,34 @@ class ListView : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupNavigationBar()
         setupTableView()
         
         presenter?.updateView()
     }
     
+    // MARK: IBAction
+    
+    @IBAction func tapAddBarButton() {
+        print("Click!")
+    }
     
     // MARK: Private
+    
+    private func setupNavigationBar() {
+        title = "To Do List"
+        
+        let button = initAddBarButton()
+        navigationItem.rightBarButtonItem = button
+    }
     
     private func setupTableView() {
         tableView.dataSource = self
     }
     
+    private func initAddBarButton() -> UIBarButtonItem {
+        return UIBarButtonItem(title: "Add", style: .Plain, target: self, action: Selector("tapAddBarButton"))
+    }
 }
 
 // MARK: ListViewProtocol
