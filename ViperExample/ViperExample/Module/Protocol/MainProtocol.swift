@@ -30,8 +30,10 @@ protocol MainPresenterProtocol : class {
 
 protocol MainInteractorInputProtocol : class {
     weak var presenter: MainInteractorOutputProtocol? { get set }
+    
+    func fetchToDoList()
 }
 
 protocol MainInteractorOutputProtocol : class {
-    
+    func didFetchToDoList(list: [ToDo])
 }

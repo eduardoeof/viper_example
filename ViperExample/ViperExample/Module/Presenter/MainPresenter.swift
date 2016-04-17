@@ -17,8 +17,7 @@ class MainPresenter : MainPresenterProtocol  {
     // MARK: MainPresenterProtocol methods
     
     func updateView() {
-        let list = ["Do it", "Do that", "Do everything"]
-        view?.showToDoList(list)
+        interactor?.fetchToDoList()
     }
     
 }
@@ -26,5 +25,21 @@ class MainPresenter : MainPresenterProtocol  {
 // MARK: MainInteractorOutputProtocol
 
 extension MainPresenter : MainInteractorOutputProtocol {
+
+    func didFetchToDoList(toDoList: [ToDo]) {
+        let textList = extractTextsFromToDoList(toDoList)
+        view?.showToDoList(textList)
+    }
+    
+    // MARK: Private
+    
+    private func extractTextsFromToDoList(toDoList: [ToDo]) -> [String] {
+        var textList: [String] = []
+        for todo in toDoList {
+            textList.append(todo.text)
+        }
+        
+        return textList
+    }
     
 }
