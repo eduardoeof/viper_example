@@ -13,6 +13,12 @@ class CreationPresenter : CreationPresenterProtocol {
     var wireframe: CreationWireframeProtocol?
     
     weak var view: CreationViewProtocol?
+    
+    // MARK: CreationPresenterProtocol
+    
+    func createToDo(text: String) {
+        
+    }
 }
 
 // MARK: CreationInteractorOutputProtocol

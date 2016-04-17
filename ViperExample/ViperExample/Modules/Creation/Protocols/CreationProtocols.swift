@@ -21,6 +21,8 @@ protocol CreationPresenterProtocol : class {
     var wireframe: CreationWireframeProtocol? { get set }
     
     weak var view: CreationViewProtocol? { get set }
+    
+    func createToDo(text: String)
 }
 
 protocol CreationInteractorInputProtocol : class {

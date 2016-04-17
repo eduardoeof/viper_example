@@ -26,7 +26,11 @@ class CreationView : UIViewController, CreationViewProtocol {
     // MARK: IBAction
     
     @IBAction func tapCreateButton() {
+        guard let text = textField.text where !text.isEmpty else {
+            return
+        }
         
+        presenter?.createToDo(text)
     }
     
     // MARK: Private
