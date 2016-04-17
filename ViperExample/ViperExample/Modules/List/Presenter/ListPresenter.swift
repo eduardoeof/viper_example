@@ -20,6 +20,10 @@ class ListPresenter : ListPresenterProtocol  {
         interactor?.fetchList()
     }
     
+    func didTapAddBarButton() {
+        wireframe?.pushCreation()
+    }
+    
 }
 
 // MARK: ListInteractorOutputProtocol

@@ -10,7 +10,9 @@ import Foundation
 import UIKit
 
 protocol ListWireframeProtocol : class {
-
+    static func addListOnWindow(window: UIWindow)
+    
+    func pushCreation()
 }
 
 protocol ListViewProtocol : class {
@@ -27,6 +29,7 @@ protocol ListPresenterProtocol : class {
     weak var view: ListViewProtocol? { get set }
     
     func updateView()
+    func didTapAddBarButton()
 }
 
 protocol ListInteractorInputProtocol : class {

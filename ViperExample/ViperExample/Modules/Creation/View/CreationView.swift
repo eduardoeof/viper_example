@@ -6,8 +6,25 @@
 //  Copyright © 2016 eduardoeof. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class CreatioView : CreationViewProtocol {
+class CreationView : UIViewController, CreationViewProtocol {
     var presenter: CreationPresenterProtocol?
+    
+    @IBOutlet weak var createButton: UIButton!
+    @IBOutlet weak var textField: UITextField!
+    
+    // MARK: UIViewController
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+    }
+    
+    // MARK: IBAction
+    
+    @IBAction func tapCreateButton() {
+        print("Click!!!!!!")
+    }
 }

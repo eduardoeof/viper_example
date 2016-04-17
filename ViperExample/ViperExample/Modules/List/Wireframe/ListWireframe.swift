@@ -30,4 +30,12 @@ class ListWireframe : ListWireframeProtocol {
         window.rootViewController = navigationController
     }
     
+    // MARK: ListWireframeProtocol
+    
+    func pushCreation() {
+        if let navigationController = navigationController {
+            CreationWireframe.pushCreation(navigationController)
+        }
+    }
+    
 }

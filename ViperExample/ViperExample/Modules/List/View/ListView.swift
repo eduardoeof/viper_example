@@ -29,7 +29,7 @@ class ListView : UIViewController {
     // MARK: IBAction
     
     @IBAction func tapAddBarButton() {
-        print("Click!")
+        presenter?.didTapAddBarButton()
     }
     
     // MARK: Private

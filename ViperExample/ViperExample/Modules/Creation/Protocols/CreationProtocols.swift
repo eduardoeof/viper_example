@@ -6,10 +6,10 @@
 //  Copyright © 2016 eduardoeof. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol CreationWireframeProtocol : class {
-    
+    static func pushCreation(navigationController: UINavigationController)
 }
 
 protocol CreationViewProtocol : class {
