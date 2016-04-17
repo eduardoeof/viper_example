@@ -113,10 +113,10 @@
 		3347C1C61CC30EBB00164BE3 /* ViperExample */ = {
 			isa = PBXGroup;
 			children = (
-				3347C2141CC3DF0E00164BE3 /* Enums */,
-				3347C20F1CC3DCCD00164BE3 /* DAO */,
 				3347C1C71CC30EBB00164BE3 /* AppDelegate.swift */,
-				3347C1FA1CC3132500164BE3 /* Module */,
+				3347C20F1CC3DCCD00164BE3 /* DAO */,
+				3347C2141CC3DF0E00164BE3 /* Enums */,
+				3347C1FA1CC3132500164BE3 /* Modules */,
 				3347C1F61CC310AA00164BE3 /* Resourses */,
 			);
 			path = ViperExample;
@@ -150,7 +150,7 @@
 			path = Resourses;
 			sourceTree = "<group>";
 		};
-		3347C1FA1CC3132500164BE3 /* Module */ = {
+		3347C1FA1CC3132500164BE3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				3347C2001CC3137600164BE3 /* Entity */,
@@ -160,7 +160,7 @@
 				3347C1FE1CC3134600164BE3 /* View */,
 				3347C1FF1CC3135000164BE3 /* Wireframe */,
 			);
-			path = Module;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		3347C1FB1CC3133300164BE3 /* Protocol */ = {
