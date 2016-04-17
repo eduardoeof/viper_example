@@ -14,9 +14,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        initWindow()
+        
+        if let window = window {
+            MainWireframe.AddMainOnWindow(window)
+        }
+        
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
+    // MARK: Private
+    
+    private func initWindow() {
+        let frame = UIScreen.mainScreen().bounds
+        window = UIWindow(frame: frame)
+    }
+    
 }
 

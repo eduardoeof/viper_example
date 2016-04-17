@@ -7,24 +7,27 @@
 //
 
 import Foundation
+import UIKit
 
-protocol MainWireframeProtocol {
-    
+protocol MainWireframeProtocol : class {
+
 }
 
-protocol MainViewProtocol {
-    
+protocol MainViewProtocol : class {
+    var presenter: MainPresenterProtocol? { get set }
 }
 
-protocol MainPresenterProtocol {
+protocol MainPresenterProtocol : class {
+    var interactor: MainInteractorInputProtocol? { get set }
+    var wireframe: MainWireframeProtocol? { get set }
     
+    weak var view: MainViewProtocol? { get set }
 }
 
-
-protocol MainInteractorInputProtocol {
-    
+protocol MainInteractorInputProtocol : class {
+    weak var presenter: MainInteractorOutputProtocol? { get set }
 }
 
-protocol MainInteractorOutputProtocol {
+protocol MainInteractorOutputProtocol : class {
     
 }
