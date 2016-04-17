@@ -9,5 +9,5 @@
 import Foundation
 
 enum ToDoError : ErrorType {
-    case EmptyToDoList
+    case EmptyList
 }

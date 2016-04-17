@@ -25,7 +25,7 @@ class MainInteractor : MainInteractorInputProtocol {
     
     func fetchToDoList() {
         guard let list = dao.loadToDos() else {
-            presenter?.didFailFetchToDoList(ToDoError.EmptyToDoList)
+            presenter?.didFailFetchToDoList(ToDoError.EmptyList)
             return
         }
         

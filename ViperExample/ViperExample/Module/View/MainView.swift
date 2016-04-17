@@ -42,6 +42,19 @@ extension MainView : MainViewProtocol {
         toDoList = list
         tableView.reloadData()
     }
+ 
+    func showAlert(title title: String, description: String) {
+        let alertController = UIAlertController(title: title,
+                                              message: description,
+                                       preferredStyle: .Alert)
+        let okAction = UIAlertAction(title: "OK", style: .Default) {
+            alertAction in
+            alertController.dismissViewControllerAnimated(true, completion: nil)
+        }
+        alertController.addAction(okAction)
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
     
 }
 

@@ -31,8 +31,11 @@ extension MainPresenter : MainInteractorOutputProtocol {
         view?.showToDoList(textList)
     }
     
-    func didFailFetchToDoList(error: ErrorType) {
-        
+    func didFailFetchToDoList(error: ToDoError) {
+        if error == .EmptyList {
+            view?.showAlert(title: "Error",
+                      description: "Your ToDo list is empty! Go and find something to do!")
+        }
     }
     
     // MARK: Private

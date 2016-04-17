@@ -17,6 +17,7 @@ protocol MainViewProtocol : class {
     var presenter: MainPresenterProtocol? { get set }
     
     func showToDoList(list: [String])
+    func showAlert(title title: String, description: String)
 }
 
 protocol MainPresenterProtocol : class {
@@ -36,5 +37,5 @@ protocol MainInteractorInputProtocol : class {
 
 protocol MainInteractorOutputProtocol : class {
     func didFetchToDoList(list: [ToDo])
-    func didFailFetchToDoList(error: ErrorType)
+    func didFailFetchToDoList(error: ToDoError)
 }
