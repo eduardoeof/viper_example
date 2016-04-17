@@ -13,7 +13,7 @@ class MainWireframe : MainWireframeProtocol {
     
     private weak var navigationController: UINavigationController?
     
-    class func AddMainOnWindow(window: UIWindow) {
+    class func addMainOnWindow(window: UIWindow) {
         let wireframe = MainWireframe()
         let view = MainView()
         let presenter = MainPresenter()
