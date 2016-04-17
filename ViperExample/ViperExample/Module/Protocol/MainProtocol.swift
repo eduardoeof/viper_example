@@ -15,6 +15,8 @@ protocol MainWireframeProtocol : class {
 
 protocol MainViewProtocol : class {
     var presenter: MainPresenterProtocol? { get set }
+    
+    func showToDoList(list: [String])
 }
 
 protocol MainPresenterProtocol : class {
@@ -22,6 +24,8 @@ protocol MainPresenterProtocol : class {
     var wireframe: MainWireframeProtocol? { get set }
     
     weak var view: MainViewProtocol? { get set }
+    
+    func updateView()
 }
 
 protocol MainInteractorInputProtocol : class {
