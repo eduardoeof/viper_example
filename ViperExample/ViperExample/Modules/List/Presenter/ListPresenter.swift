@@ -1,5 +1,5 @@
 //
-//  MainPresenter.swift
+//  ListPresenter.swift
 //  ViperExample
 //
 //  Created by eduardo.ferreira on 4/17/16.
@@ -8,30 +8,30 @@
 
 import Foundation
 
-class MainPresenter : MainPresenterProtocol  {
-    var interactor: MainInteractorInputProtocol?
-    var wireframe: MainWireframeProtocol?
+class ListPresenter : ListPresenterProtocol  {
+    var interactor: ListInteractorInputProtocol?
+    var wireframe: ListWireframeProtocol?
     
-    weak var view: MainViewProtocol?
+    weak var view: ListViewProtocol?
     
-    // MARK: MainPresenterProtocol methods
+    // MARK: ListPresenterProtocol methods
     
     func updateView() {
-        interactor?.fetchToDoList()
+        interactor?.fetchList()
     }
     
 }
 
-// MARK: MainInteractorOutputProtocol
+// MARK: ListInteractorOutputProtocol
 
-extension MainPresenter : MainInteractorOutputProtocol {
+extension ListPresenter : ListInteractorOutputProtocol {
 
-    func didFetchToDoList(toDoList: [ToDo]) {
+    func didFetchList(toDoList: [ToDo]) {
         let textList = extractTextsFromToDoList(toDoList)
-        view?.showToDoList(textList)
+        view?.showList(textList)
     }
     
-    func didFailFetchToDoList(error: ToDoError) {
+    func didFailFetchList(error: ToDoError) {
         if error == .EmptyList {
             view?.showAlert(title: "Error",
                       description: "Your ToDo list is empty! Go and find something to do!")

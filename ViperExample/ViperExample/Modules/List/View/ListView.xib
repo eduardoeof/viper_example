@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainView" customModule="ViperExample" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListView" customModule="ViperExample" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="kQp-cC-RWq" id="TJ6-h9-O4c"/>
-                <outlet property="view" destination="iN0-l3-epB" id="dVe-jS-lwp"/>
+                <outlet property="tableView" destination="kQp-cC-RWq" id="5Ee-tc-jpR"/>
+                <outlet property="view" destination="iN0-l3-epB" id="OcW-Qr-cg3"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

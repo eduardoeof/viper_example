@@ -1,5 +1,5 @@
 //
-//  MainInteractor.swift
+//  ListInteractor.swift
 //  ViperExample
 //
 //  Created by eduardo.ferreira on 4/17/16.
@@ -8,8 +8,8 @@
 
 import Foundation
 
-class MainInteractor : MainInteractorInputProtocol {
-    weak var presenter: MainInteractorOutputProtocol?
+class ListInteractor : ListInteractorInputProtocol {
+    weak var presenter: ListInteractorOutputProtocol?
     
     private let dao: ToDoDAO
     
@@ -21,15 +21,15 @@ class MainInteractor : MainInteractorInputProtocol {
         self.init(dao: ToDoMemoryDAO())
     }
     
-    // MainInteractorInputProtocol
+    // ListInteractorInputProtocol
     
-    func fetchToDoList() {
+    func fetchList() {
         guard let list = dao.loadToDos() else {
-            presenter?.didFailFetchToDoList(ToDoError.EmptyList)
+            presenter?.didFailFetchList(ToDoError.EmptyList)
             return
         }
         
-        presenter?.didFetchToDoList(list)
+        presenter?.didFetchList(list)
     }
     
 }

@@ -1,5 +1,5 @@
 //
-//  MainView.swift
+//  ListView.swift
 //  ViperExample
 //
 //  Created by eduardo.ferreira on 4/17/16.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class MainView : UIViewController {
-    var presenter: MainPresenterProtocol?
+class ListView : UIViewController {
+    var presenter: ListPresenterProtocol?
 
     @IBOutlet weak var tableView: UITableView!
 
@@ -34,11 +34,11 @@ class MainView : UIViewController {
     
 }
 
-// MARK: MainViewProtocol
+// MARK: ListViewProtocol
 
-extension MainView : MainViewProtocol {
+extension ListView : ListViewProtocol {
     
-    func showToDoList(list: [String]) {
+    func showList(list: [String]) {
         toDoList = list
         tableView.reloadData()
     }
@@ -60,7 +60,7 @@ extension MainView : MainViewProtocol {
 
 // MARK: UITableViewDataSource
 
-extension MainView : UITableViewDataSource {
+extension ListView : UITableViewDataSource {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return toDoList?.count ?? 0
