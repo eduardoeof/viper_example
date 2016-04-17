@@ -23,6 +23,12 @@
 		337C1BE11CC3F3520095C623 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C1BD91CC3F3520095C623 /* ListView.swift */; };
 		337C1BE21CC3F3520095C623 /* ListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 337C1BDA1CC3F3520095C623 /* ListView.xib */; };
 		337C1BE31CC3F3520095C623 /* ListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C1BDC1CC3F3520095C623 /* ListWireframe.swift */; };
+		337C1BE91CC3F6A00095C623 /* CreationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C1BE81CC3F6A00095C623 /* CreationProtocols.swift */; };
+		337C1BFA1CC3F8000095C623 /* CreationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C1BF31CC3F8000095C623 /* CreationInteractor.swift */; };
+		337C1BFB1CC3F8000095C623 /* CreationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C1BF51CC3F8000095C623 /* CreationPresenter.swift */; };
+		337C1BFC1CC3F8000095C623 /* CreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C1BF71CC3F8000095C623 /* CreationView.swift */; };
+		337C1BFD1CC3F8000095C623 /* CreationWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C1BF91CC3F8000095C623 /* CreationWireframe.swift */; };
+		337C1BFF1CC3F89F0095C623 /* CreationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 337C1BFE1CC3F89F0095C623 /* CreationView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +70,12 @@
 		337C1BD91CC3F3520095C623 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		337C1BDA1CC3F3520095C623 /* ListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListView.xib; sourceTree = "<group>"; };
 		337C1BDC1CC3F3520095C623 /* ListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListWireframe.swift; sourceTree = "<group>"; };
+		337C1BE81CC3F6A00095C623 /* CreationProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationProtocols.swift; sourceTree = "<group>"; };
+		337C1BF31CC3F8000095C623 /* CreationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationInteractor.swift; sourceTree = "<group>"; };
+		337C1BF51CC3F8000095C623 /* CreationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationPresenter.swift; sourceTree = "<group>"; };
+		337C1BF71CC3F8000095C623 /* CreationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationView.swift; sourceTree = "<group>"; };
+		337C1BF91CC3F8000095C623 /* CreationWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationWireframe.swift; sourceTree = "<group>"; };
+		337C1BFE1CC3F89F0095C623 /* CreationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreationView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +183,7 @@
 		337C1BB91CC3F15C0095C623 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				337C1BE61CC3F6A00095C623 /* Creation */,
 				337C1BCF1CC3F3520095C623 /* List */,
 			);
 			path = Modules;
@@ -234,6 +247,59 @@
 			isa = PBXGroup;
 			children = (
 				337C1BDC1CC3F3520095C623 /* ListWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		337C1BE61CC3F6A00095C623 /* Creation */ = {
+			isa = PBXGroup;
+			children = (
+				337C1BF21CC3F8000095C623 /* Interactor */,
+				337C1BF41CC3F8000095C623 /* Presenter */,
+				337C1BE71CC3F6A00095C623 /* Protocols */,
+				337C1BF61CC3F8000095C623 /* View */,
+				337C1BF81CC3F8000095C623 /* Wireframe */,
+			);
+			path = Creation;
+			sourceTree = "<group>";
+		};
+		337C1BE71CC3F6A00095C623 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				337C1BE81CC3F6A00095C623 /* CreationProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		337C1BF21CC3F8000095C623 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				337C1BF31CC3F8000095C623 /* CreationInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		337C1BF41CC3F8000095C623 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				337C1BF51CC3F8000095C623 /* CreationPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		337C1BF61CC3F8000095C623 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				337C1BF71CC3F8000095C623 /* CreationView.swift */,
+				337C1BFE1CC3F89F0095C623 /* CreationView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		337C1BF81CC3F8000095C623 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				337C1BF91CC3F8000095C623 /* CreationWireframe.swift */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";
@@ -343,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				337C1BE21CC3F3520095C623 /* ListView.xib in Resources */,
+				337C1BFF1CC3F89F0095C623 /* CreationView.xib in Resources */,
 				337C1BA21CC3EFF50095C623 /* Info.plist in Resources */,
 				337C1BA01CC3EFF50095C623 /* Assets.xcassets in Resources */,
 				337C1BA11CC3EFF50095C623 /* Default-568h@2x.png in Resources */,
@@ -372,14 +439,19 @@
 			files = (
 				337C1BE31CC3F3520095C623 /* ListWireframe.swift in Sources */,
 				337C1BDF1CC3F3520095C623 /* ListPresenter.swift in Sources */,
+				337C1BE91CC3F6A00095C623 /* CreationProtocols.swift in Sources */,
 				337C1BDE1CC3F3520095C623 /* ListInteractor.swift in Sources */,
 				3347C21B1CC3DFE400164BE3 /* ToDoDAO.swift in Sources */,
+				337C1BFB1CC3F8000095C623 /* CreationPresenter.swift in Sources */,
 				337C1BDD1CC3F3520095C623 /* ToDo.swift in Sources */,
 				3347C21C1CC3DFE400164BE3 /* ToDoMemoryDAO.swift in Sources */,
 				3347C2181CC3DF6E00164BE3 /* ToDoError.swift in Sources */,
 				3347C1C81CC30EBB00164BE3 /* AppDelegate.swift in Sources */,
 				337C1BE01CC3F3520095C623 /* ListProtocols.swift in Sources */,
+				337C1BFC1CC3F8000095C623 /* CreationView.swift in Sources */,
 				337C1BE11CC3F3520095C623 /* ListView.swift in Sources */,
+				337C1BFD1CC3F8000095C623 /* CreationWireframe.swift in Sources */,
+				337C1BFA1CC3F8000095C623 /* CreationInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
