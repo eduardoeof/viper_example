@@ -12,6 +12,7 @@
 		3347C1DD1CC30EBB00164BE3 /* ViperExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3347C1DC1CC30EBB00164BE3 /* ViperExampleTests.swift */; };
 		3347C1E81CC30EBB00164BE3 /* ViperExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3347C1E71CC30EBB00164BE3 /* ViperExampleUITests.swift */; };
 		3347C1F81CC3114100164BE3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3347C1F71CC3114100164BE3 /* Default-568h@2x.png */; };
+		3347C2021CC3151200164BE3 /* MainProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3347C2011CC3151200164BE3 /* MainProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		3347C1E71CC30EBB00164BE3 /* ViperExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperExampleUITests.swift; sourceTree = "<group>"; };
 		3347C1E91CC30EBB00164BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3347C1F71CC3114100164BE3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../Default-568h@2x.png"; sourceTree = "<group>"; };
+		3347C2011CC3151200164BE3 /* MainProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				3347C1C71CC30EBB00164BE3 /* AppDelegate.swift */,
+				3347C1FA1CC3132500164BE3 /* Module */,
 				3347C1F61CC310AA00164BE3 /* Resourses */,
 			);
 			path = ViperExample;
@@ -125,6 +128,62 @@
 				3347C1D31CC30EBB00164BE3 /* Info.plist */,
 			);
 			path = Resourses;
+			sourceTree = "<group>";
+		};
+		3347C1FA1CC3132500164BE3 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				3347C2001CC3137600164BE3 /* Entity */,
+				3347C1FC1CC3133A00164BE3 /* Interactor */,
+				3347C1FD1CC3134100164BE3 /* Presenter */,
+				3347C1FB1CC3133300164BE3 /* Protocol */,
+				3347C1FE1CC3134600164BE3 /* View */,
+				3347C1FF1CC3135000164BE3 /* Wireframe */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		3347C1FB1CC3133300164BE3 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				3347C2011CC3151200164BE3 /* MainProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		3347C1FC1CC3133A00164BE3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3347C1FD1CC3134100164BE3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3347C1FE1CC3134600164BE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3347C1FF1CC3135000164BE3 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		3347C2001CC3137600164BE3 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3347C2021CC3151200164BE3 /* MainProtocol.swift in Sources */,
 				3347C1C81CC30EBB00164BE3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
