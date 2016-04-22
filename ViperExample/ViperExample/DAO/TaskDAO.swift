@@ -1,5 +1,5 @@
 //
-//  ToDoDAO.swift
+//  TaskDAO.swift
 //  ViperExample
 //
 //  Created by eduardo.ferreira on 4/17/16.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ToDoDAO {
-    func saveToDo(todo: Task)
-    func loadToDos() -> [Task]?
+protocol TaskDAO {
+    func saveTask(task: Task)
+    func loadTasks() -> [Task]?
 }

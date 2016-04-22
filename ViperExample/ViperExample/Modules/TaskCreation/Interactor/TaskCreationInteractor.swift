@@ -11,22 +11,22 @@ import Foundation
 class TaskCreationInteractor : TaskCreationInteractorInputProtocol {
     weak var presenter: TaskCreationInteractorOutputProtocol?
     
-    let dao: ToDoDAO
+    let dao: TaskDAO
     
-    init(dao: ToDoDAO) {
+    init(dao: TaskDAO) {
         self.dao = dao
     }
     
     convenience init() {
-        self.init(dao: ToDoMemoryDAO())
+        self.init(dao: TaskMemoryDAO())
     }
     
     // MARK: TaskCreationInteractorInputProtocol
     
-    func createToDo(text: String) {
+    func createTask(text: String) {
         let task = Task(text: text)
-        dao.saveToDo(task)
+        dao.saveTask(task)
         
-        presenter?.didInsertToDo()
+        presenter?.didInsertTask()
     }
 }

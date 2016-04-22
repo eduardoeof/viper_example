@@ -40,5 +40,5 @@ protocol TaskListInteractorInputProtocol : class {
 
 protocol TaskListInteractorOutputProtocol : class {
     func didFetchList(list: [Task])
-    func didFailFetchList(error: ToDoError)
+    func didFailFetchList(error: TaskError)
 }

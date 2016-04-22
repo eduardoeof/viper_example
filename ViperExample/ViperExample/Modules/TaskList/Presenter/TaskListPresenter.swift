@@ -30,24 +30,24 @@ class TaskListPresenter : TaskListPresenterProtocol  {
 
 extension TaskListPresenter : TaskListInteractorOutputProtocol {
 
-    func didFetchList(toDoList: [Task]) {
-        let textList = extractTextsFromToDoList(toDoList)
+    func didFetchList(taskList: [Task]) {
+        let textList = extractTextsFromTaskList(taskList)
         view?.showList(textList)
     }
     
-    func didFailFetchList(error: ToDoError) {
+    func didFailFetchList(error: TaskError) {
         if error == .EmptyList {
             view?.showAlert(title: "Error",
-                      description: "Your ToDo list is empty! Go and find something to do!")
+                      description: "Your task list is empty! Go and find something to do!")
         }
     }
     
     // MARK: Private
     
-    private func extractTextsFromToDoList(toDoList: [Task]) -> [String] {
+    private func extractTextsFromTaskList(taskList: [Task]) -> [String] {
         var textList: [String] = []
-        for todo in toDoList {
-            textList.append(todo.text)
+        for task in taskList {
+            textList.append(task.text)
         }
         
         return textList

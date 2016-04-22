@@ -29,9 +29,9 @@ protocol TaskCreationPresenterProtocol : class {
 protocol TaskCreationInteractorInputProtocol : class {
     weak var presenter: TaskCreationInteractorOutputProtocol? { get set }
     
-    func createToDo(text: String)
+    func createTask(text: String)
 }
 
 protocol TaskCreationInteractorOutputProtocol : class {
-    func didInsertToDo()
+    func didInsertTask()
 }

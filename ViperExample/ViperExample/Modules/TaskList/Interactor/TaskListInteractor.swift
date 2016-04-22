@@ -11,21 +11,21 @@ import Foundation
 class TaskListInteractor : TaskListInteractorInputProtocol {
     weak var presenter: TaskListInteractorOutputProtocol?
     
-    private let dao: ToDoDAO
+    private let dao: TaskDAO
     
-    init(dao: ToDoDAO) {
+    init(dao: TaskDAO) {
         self.dao = dao
     }
 
     convenience init() {
-        self.init(dao: ToDoMemoryDAO())
+        self.init(dao: TaskMemoryDAO())
     }
     
     // ListInteractorInputProtocol
     
     func fetchList() {
-        guard let list = dao.loadToDos() else {
-            presenter?.didFailFetchList(ToDoError.EmptyList)
+        guard let list = dao.loadTasks() else {
+            presenter?.didFailFetchList(TaskError.EmptyList)
             return
         }
         

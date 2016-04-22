@@ -1,5 +1,5 @@
 //
-//  ToDoError.swift
+//  TaskError.swift
 //  ViperExample
 //
 //  Created by eduardo.ferreira on 4/17/16.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-enum ToDoError : ErrorType {
+enum TaskError : ErrorType {
     case EmptyList
 }

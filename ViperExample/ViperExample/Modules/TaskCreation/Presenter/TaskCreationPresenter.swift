@@ -17,7 +17,7 @@ class TaskCreationPresenter : TaskCreationPresenterProtocol {
     // MARK: TaskCreationPresenterProtocol
     
     func didTapCreateButton(text: String) {
-        interactor?.createToDo(text)
+        interactor?.createTask(text)
     }
     
 }
@@ -26,7 +26,7 @@ class TaskCreationPresenter : TaskCreationPresenterProtocol {
 
 extension TaskCreationPresenter : TaskCreationInteractorOutputProtocol {
 
-    func didInsertToDo() {
+    func didInsertTask() {
         wireframe?.popTaskCreation()
     }
     
