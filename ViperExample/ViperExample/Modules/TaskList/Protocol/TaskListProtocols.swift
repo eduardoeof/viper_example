@@ -12,7 +12,7 @@ import UIKit
 protocol TaskListWireframeProtocol : class {
     static func addTaskListOnWindow(window: UIWindow)
     
-    func pushCreation()
+    func pushTaskCreation()
 }
 
 protocol TaskListViewProtocol : class {

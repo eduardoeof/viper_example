@@ -9,6 +9,17 @@
 import Foundation
 import UIKit
 
+//
+//  TaskListWireframe.swift
+//  ViperExample
+//
+//  Created by eduardo.ferreira on 4/17/16.
+//  Copyright © 2016 eduardoeof. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
 class TaskListWireframe : TaskListWireframeProtocol {
     
     private weak var navigationController: UINavigationController?
@@ -32,7 +43,7 @@ class TaskListWireframe : TaskListWireframeProtocol {
     
     // MARK: ListWireframeProtocol
     
-    func pushCreation() {
+    func pushTaskCreation() {
         if let navigationController = navigationController {
             TaskCreationWireframe.pushTaskCreation(navigationController)
         }

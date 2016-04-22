@@ -21,7 +21,7 @@ class TaskListPresenter : TaskListPresenterProtocol  {
     }
     
     func didTapAddBarButton() {
-        wireframe?.pushCreation()
+        wireframe?.pushTaskCreation()
     }
     
 }
