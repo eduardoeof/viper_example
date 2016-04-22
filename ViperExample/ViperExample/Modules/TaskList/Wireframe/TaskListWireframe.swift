@@ -1,5 +1,5 @@
 //
-//  ListWireframe.swift
+//  TaskListWireframe.swift
 //  ViperExample
 //
 //  Created by eduardo.ferreira on 4/17/16.
@@ -9,15 +9,15 @@
 import Foundation
 import UIKit
 
-class ListWireframe : ListWireframeProtocol {
+class TaskListWireframe : TaskListWireframeProtocol {
     
     private weak var navigationController: UINavigationController?
     
-    class func addListOnWindow(window: UIWindow) {
-        let wireframe = ListWireframe()
-        let view = ListView()
-        let presenter = ListPresenter()
-        let interactor = ListInteractor()
+    class func addTaskListOnWindow(window: UIWindow) {
+        let wireframe = TaskListWireframe()
+        let view = TaskListView()
+        let presenter = TaskListPresenter()
+        let interactor = TaskListInteractor()
         
         view.presenter = presenter
         presenter.interactor = interactor

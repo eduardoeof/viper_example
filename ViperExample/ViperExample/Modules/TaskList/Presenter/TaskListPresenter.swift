@@ -1,5 +1,5 @@
 //
-//  ListPresenter.swift
+//  TaskListPresenter.swift
 //  ViperExample
 //
 //  Created by eduardo.ferreira on 4/17/16.
@@ -8,11 +8,11 @@
 
 import Foundation
 
-class ListPresenter : ListPresenterProtocol  {
-    var interactor: ListInteractorInputProtocol?
-    var wireframe: ListWireframeProtocol?
+class TaskListPresenter : TaskListPresenterProtocol  {
+    var interactor: TaskListInteractorInputProtocol?
+    var wireframe: TaskListWireframeProtocol?
     
-    weak var view: ListViewProtocol?
+    weak var view: TaskListViewProtocol?
     
     // MARK: ListPresenterProtocol methods
     
@@ -28,9 +28,9 @@ class ListPresenter : ListPresenterProtocol  {
 
 // MARK: ListInteractorOutputProtocol
 
-extension ListPresenter : ListInteractorOutputProtocol {
+extension TaskListPresenter : TaskListInteractorOutputProtocol {
 
-    func didFetchList(toDoList: [ToDo]) {
+    func didFetchList(toDoList: [Task]) {
         let textList = extractTextsFromToDoList(toDoList)
         view?.showList(textList)
     }
@@ -44,7 +44,7 @@ extension ListPresenter : ListInteractorOutputProtocol {
     
     // MARK: Private
     
-    private func extractTextsFromToDoList(toDoList: [ToDo]) -> [String] {
+    private func extractTextsFromToDoList(toDoList: [Task]) -> [String] {
         var textList: [String] = []
         for todo in toDoList {
             textList.append(todo.text)

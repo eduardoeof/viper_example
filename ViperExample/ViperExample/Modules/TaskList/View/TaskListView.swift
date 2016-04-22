@@ -1,5 +1,5 @@
 //
-//  ListView.swift
+//  TaskListView.swift
 //  ViperExample
 //
 //  Created by eduardo.ferreira on 4/17/16.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class ListView : UIViewController {
-    var presenter: ListPresenterProtocol?
+class TaskListView : UIViewController {
+    var presenter: TaskListPresenterProtocol?
 
     @IBOutlet weak var tableView: UITableView!
 
-    private var toDoList: [String]?
+    private var taskList: [String]?
     
     // MARK: UIViewController
     
@@ -38,7 +38,7 @@ class ListView : UIViewController {
     // MARK: Private
     
     private func setupNavigationBar() {
-        title = "To Do List"
+        title = "Task List"
         
         let button = initAddBarButton()
         navigationItem.rightBarButtonItem = button
@@ -53,12 +53,12 @@ class ListView : UIViewController {
     }
 }
 
-// MARK: ListViewProtocol
+// MARK: TaskListViewProtocol
 
-extension ListView : ListViewProtocol {
+extension TaskListView : TaskListViewProtocol {
     
     func showList(list: [String]) {
-        toDoList = list
+        taskList = list
         tableView.reloadData()
     }
  
@@ -79,16 +79,16 @@ extension ListView : ListViewProtocol {
 
 // MARK: UITableViewDataSource
 
-extension ListView : UITableViewDataSource {
+extension TaskListView : UITableViewDataSource {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return toDoList?.count ?? 0
+        return taskList?.count ?? 0
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = initCell()
         
-        if let text = toDoList?[indexPath.row] {
+        if let text = taskList?[indexPath.row] {
             setupCell(cell, text: text)
         }
         

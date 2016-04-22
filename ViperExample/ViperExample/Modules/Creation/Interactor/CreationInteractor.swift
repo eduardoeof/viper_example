@@ -24,8 +24,8 @@ class CreationInteractor : CreationInteractorInputProtocol {
     // MARK: CreationInteractorInputProtocol
     
     func createToDo(text: String) {
-        let todo = ToDo(text: text)
-        dao.saveToDo(todo)
+        let task = Task(text: text)
+        dao.saveToDo(task)
         
         presenter?.didInsertToDo()
     }

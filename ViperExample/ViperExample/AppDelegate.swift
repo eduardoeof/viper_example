@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         initWindow()
         
         if let window = window {
-            ListWireframe.addListOnWindow(window)
+            TaskListWireframe.addTaskListOnWindow(window)
         }
         
         window?.makeKeyAndVisible()

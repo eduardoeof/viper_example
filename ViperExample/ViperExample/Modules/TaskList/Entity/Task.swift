@@ -1,5 +1,5 @@
 //
-//  ToDo.swift
+//  Task.swift
 //  ViperExample
 //
 //  Created by eduardo.ferreira on 4/17/16.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ToDo {
+struct Task {
     
     let text: String
     

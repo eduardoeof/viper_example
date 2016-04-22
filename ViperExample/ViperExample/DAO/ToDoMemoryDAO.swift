@@ -10,13 +10,13 @@ import Foundation
 
 class ToDoMemoryDAO : ToDoDAO {
     
-    static var list: [ToDo]?
+    static var list: [Task]?
     
     init() {
         if ToDoMemoryDAO.list == nil {
-            let todo1 = ToDo(text: "Do it")
-            let todo2 = ToDo(text: "Do that")
-            let todo3 = ToDo(text: "Do everything")
+            let todo1 = Task(text: "Do it")
+            let todo2 = Task(text: "Do that")
+            let todo3 = Task(text: "Do everything")
             
             ToDoMemoryDAO.list = [todo1, todo2, todo3]
         }
@@ -24,11 +24,11 @@ class ToDoMemoryDAO : ToDoDAO {
     
     // MARK: ToDoDAO
     
-    func saveToDo(todo: ToDo) {
+    func saveToDo(todo: Task) {
         ToDoMemoryDAO.list?.append(todo)
     }
     
-    func loadToDos() -> [ToDo]? {
+    func loadToDos() -> [Task]? {
         return ToDoMemoryDAO.list
     }
 }

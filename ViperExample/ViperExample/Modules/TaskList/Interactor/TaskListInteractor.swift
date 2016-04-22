@@ -1,5 +1,5 @@
 //
-//  ListInteractor.swift
+//  TaskListInteractor.swift
 //  ViperExample
 //
 //  Created by eduardo.ferreira on 4/17/16.
@@ -8,8 +8,8 @@
 
 import Foundation
 
-class ListInteractor : ListInteractorInputProtocol {
-    weak var presenter: ListInteractorOutputProtocol?
+class TaskListInteractor : TaskListInteractorInputProtocol {
+    weak var presenter: TaskListInteractorOutputProtocol?
     
     private let dao: ToDoDAO
     
