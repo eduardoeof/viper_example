@@ -38,7 +38,7 @@ class TaskListView : UIViewController {
     // MARK: Private
     
     private func setupNavigationBar() {
-        title = "Task List"
+        title = "List"
         
         let button = initAddBarButton()
         navigationItem.rightBarButtonItem = button

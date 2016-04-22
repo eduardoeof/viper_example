@@ -20,15 +20,15 @@
 		335997B11CC9B454000456BF /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335997A91CC9B454000456BF /* TaskListView.swift */; };
 		335997B21CC9B454000456BF /* TaskListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 335997AA1CC9B454000456BF /* TaskListView.xib */; };
 		335997B31CC9B454000456BF /* TaskListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335997AC1CC9B454000456BF /* TaskListWireframe.swift */; };
+		335997C01CC9B6E6000456BF /* TaskCreationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335997B61CC9B6E6000456BF /* TaskCreationInteractor.swift */; };
+		335997C11CC9B6E6000456BF /* TaskCreationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335997B81CC9B6E6000456BF /* TaskCreationPresenter.swift */; };
+		335997C21CC9B6E6000456BF /* TaskCreationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335997BA1CC9B6E6000456BF /* TaskCreationProtocols.swift */; };
+		335997C31CC9B6E6000456BF /* TaskCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335997BC1CC9B6E6000456BF /* TaskCreationView.swift */; };
+		335997C41CC9B6E6000456BF /* TaskCreationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 335997BD1CC9B6E6000456BF /* TaskCreationView.xib */; };
+		335997C51CC9B6E6000456BF /* TaskCreationWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335997BF1CC9B6E6000456BF /* TaskCreationWireframe.swift */; };
 		337C1BA01CC3EFF50095C623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 337C1B9D1CC3EFF50095C623 /* Assets.xcassets */; };
 		337C1BA11CC3EFF50095C623 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 337C1B9E1CC3EFF50095C623 /* Default-568h@2x.png */; };
 		337C1BA21CC3EFF50095C623 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 337C1B9F1CC3EFF50095C623 /* Info.plist */; };
-		337C1BE91CC3F6A00095C623 /* CreationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C1BE81CC3F6A00095C623 /* CreationProtocols.swift */; };
-		337C1BFA1CC3F8000095C623 /* CreationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C1BF31CC3F8000095C623 /* CreationInteractor.swift */; };
-		337C1BFB1CC3F8000095C623 /* CreationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C1BF51CC3F8000095C623 /* CreationPresenter.swift */; };
-		337C1BFC1CC3F8000095C623 /* CreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C1BF71CC3F8000095C623 /* CreationView.swift */; };
-		337C1BFD1CC3F8000095C623 /* CreationWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C1BF91CC3F8000095C623 /* CreationWireframe.swift */; };
-		337C1BFF1CC3F89F0095C623 /* CreationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 337C1BFE1CC3F89F0095C623 /* CreationView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,15 +67,15 @@
 		335997A91CC9B454000456BF /* TaskListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		335997AA1CC9B454000456BF /* TaskListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskListView.xib; sourceTree = "<group>"; };
 		335997AC1CC9B454000456BF /* TaskListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListWireframe.swift; sourceTree = "<group>"; };
+		335997B61CC9B6E6000456BF /* TaskCreationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCreationInteractor.swift; sourceTree = "<group>"; };
+		335997B81CC9B6E6000456BF /* TaskCreationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCreationPresenter.swift; sourceTree = "<group>"; };
+		335997BA1CC9B6E6000456BF /* TaskCreationProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCreationProtocols.swift; sourceTree = "<group>"; };
+		335997BC1CC9B6E6000456BF /* TaskCreationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCreationView.swift; sourceTree = "<group>"; };
+		335997BD1CC9B6E6000456BF /* TaskCreationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskCreationView.xib; sourceTree = "<group>"; };
+		335997BF1CC9B6E6000456BF /* TaskCreationWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCreationWireframe.swift; sourceTree = "<group>"; };
 		337C1B9D1CC3EFF50095C623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		337C1B9E1CC3EFF50095C623 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		337C1B9F1CC3EFF50095C623 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		337C1BE81CC3F6A00095C623 /* CreationProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationProtocols.swift; sourceTree = "<group>"; };
-		337C1BF31CC3F8000095C623 /* CreationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationInteractor.swift; sourceTree = "<group>"; };
-		337C1BF51CC3F8000095C623 /* CreationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationPresenter.swift; sourceTree = "<group>"; };
-		337C1BF71CC3F8000095C623 /* CreationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationView.swift; sourceTree = "<group>"; };
-		337C1BF91CC3F8000095C623 /* CreationWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationWireframe.swift; sourceTree = "<group>"; };
-		337C1BFE1CC3F89F0095C623 /* CreationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreationView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +232,59 @@
 			path = Wireframe;
 			sourceTree = "<group>";
 		};
+		335997B41CC9B6E6000456BF /* TaskCreation */ = {
+			isa = PBXGroup;
+			children = (
+				335997B51CC9B6E6000456BF /* Interactor */,
+				335997B71CC9B6E6000456BF /* Presenter */,
+				335997B91CC9B6E6000456BF /* Protocols */,
+				335997BB1CC9B6E6000456BF /* View */,
+				335997BE1CC9B6E6000456BF /* Wireframe */,
+			);
+			path = TaskCreation;
+			sourceTree = "<group>";
+		};
+		335997B51CC9B6E6000456BF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				335997B61CC9B6E6000456BF /* TaskCreationInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		335997B71CC9B6E6000456BF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				335997B81CC9B6E6000456BF /* TaskCreationPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		335997B91CC9B6E6000456BF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				335997BA1CC9B6E6000456BF /* TaskCreationProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		335997BB1CC9B6E6000456BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				335997BC1CC9B6E6000456BF /* TaskCreationView.swift */,
+				335997BD1CC9B6E6000456BF /* TaskCreationView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		335997BE1CC9B6E6000456BF /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				335997BF1CC9B6E6000456BF /* TaskCreationWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
 		337C1B9C1CC3EFF50095C623 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,63 +298,10 @@
 		337C1BB91CC3F15C0095C623 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				335997B41CC9B6E6000456BF /* TaskCreation */,
 				3359979F1CC9B454000456BF /* TaskList */,
-				337C1BE61CC3F6A00095C623 /* Creation */,
 			);
 			path = Modules;
-			sourceTree = "<group>";
-		};
-		337C1BE61CC3F6A00095C623 /* Creation */ = {
-			isa = PBXGroup;
-			children = (
-				337C1BF21CC3F8000095C623 /* Interactor */,
-				337C1BF41CC3F8000095C623 /* Presenter */,
-				337C1BE71CC3F6A00095C623 /* Protocols */,
-				337C1BF61CC3F8000095C623 /* View */,
-				337C1BF81CC3F8000095C623 /* Wireframe */,
-			);
-			path = Creation;
-			sourceTree = "<group>";
-		};
-		337C1BE71CC3F6A00095C623 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				337C1BE81CC3F6A00095C623 /* CreationProtocols.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		337C1BF21CC3F8000095C623 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				337C1BF31CC3F8000095C623 /* CreationInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		337C1BF41CC3F8000095C623 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				337C1BF51CC3F8000095C623 /* CreationPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		337C1BF61CC3F8000095C623 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				337C1BF71CC3F8000095C623 /* CreationView.swift */,
-				337C1BFE1CC3F89F0095C623 /* CreationView.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		337C1BF81CC3F8000095C623 /* Wireframe */ = {
-			isa = PBXGroup;
-			children = (
-				337C1BF91CC3F8000095C623 /* CreationWireframe.swift */,
-			);
-			path = Wireframe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,10 +408,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				337C1BFF1CC3F89F0095C623 /* CreationView.xib in Resources */,
 				337C1BA21CC3EFF50095C623 /* Info.plist in Resources */,
 				335997B21CC9B454000456BF /* TaskListView.xib in Resources */,
 				337C1BA01CC3EFF50095C623 /* Assets.xcassets in Resources */,
+				335997C41CC9B6E6000456BF /* TaskCreationView.xib in Resources */,
 				337C1BA11CC3EFF50095C623 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,20 +437,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				337C1BE91CC3F6A00095C623 /* CreationProtocols.swift in Sources */,
 				335997AE1CC9B454000456BF /* TaskListInteractor.swift in Sources */,
+				335997C01CC9B6E6000456BF /* TaskCreationInteractor.swift in Sources */,
+				335997C31CC9B6E6000456BF /* TaskCreationView.swift in Sources */,
 				3347C21B1CC3DFE400164BE3 /* ToDoDAO.swift in Sources */,
 				335997AD1CC9B454000456BF /* Task.swift in Sources */,
-				337C1BFB1CC3F8000095C623 /* CreationPresenter.swift in Sources */,
 				335997AF1CC9B454000456BF /* TaskListPresenter.swift in Sources */,
 				3347C21C1CC3DFE400164BE3 /* ToDoMemoryDAO.swift in Sources */,
+				335997C11CC9B6E6000456BF /* TaskCreationPresenter.swift in Sources */,
+				335997C21CC9B6E6000456BF /* TaskCreationProtocols.swift in Sources */,
 				335997B11CC9B454000456BF /* TaskListView.swift in Sources */,
 				3347C2181CC3DF6E00164BE3 /* ToDoError.swift in Sources */,
 				3347C1C81CC30EBB00164BE3 /* AppDelegate.swift in Sources */,
-				337C1BFC1CC3F8000095C623 /* CreationView.swift in Sources */,
-				337C1BFD1CC3F8000095C623 /* CreationWireframe.swift in Sources */,
-				337C1BFA1CC3F8000095C623 /* CreationInteractor.swift in Sources */,
 				335997B01CC9B454000456BF /* TaskListProtocols.swift in Sources */,
+				335997C51CC9B6E6000456BF /* TaskCreationWireframe.swift in Sources */,
 				335997B31CC9B454000456BF /* TaskListWireframe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

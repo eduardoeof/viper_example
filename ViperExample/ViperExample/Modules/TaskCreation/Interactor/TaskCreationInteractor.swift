@@ -1,5 +1,5 @@
 //
-//  CreationInteractor.swift
+//  TaskCreationInteractor.swift
 //  ViperExample
 //
 //  Created by eduardo.ferreira on 4/17/16.
@@ -8,8 +8,8 @@
 
 import Foundation
 
-class CreationInteractor : CreationInteractorInputProtocol {
-    weak var presenter: CreationInteractorOutputProtocol?
+class TaskCreationInteractor : TaskCreationInteractorInputProtocol {
+    weak var presenter: TaskCreationInteractorOutputProtocol?
     
     let dao: ToDoDAO
     
@@ -21,7 +21,7 @@ class CreationInteractor : CreationInteractorInputProtocol {
         self.init(dao: ToDoMemoryDAO())
     }
     
-    // MARK: CreationInteractorInputProtocol
+    // MARK: TaskCreationInteractorInputProtocol
     
     func createToDo(text: String) {
         let task = Task(text: text)

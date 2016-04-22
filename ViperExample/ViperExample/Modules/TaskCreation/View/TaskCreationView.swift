@@ -1,5 +1,5 @@
 //
-//  CreationView.swift
+//  TaskCreationView.swift
 //  ViperExample
 //
 //  Created by eduardo.ferreira on 4/17/16.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class CreationView : UIViewController, CreationViewProtocol {
-    var presenter: CreationPresenterProtocol?
+class TaskCreationView : UIViewController, TaskCreationViewProtocol {
+    var presenter: TaskCreationPresenterProtocol?
     
     @IBOutlet weak var createButton: UIButton!
     @IBOutlet weak var textField: UITextField!
@@ -36,7 +36,7 @@ class CreationView : UIViewController, CreationViewProtocol {
     // MARK: Private
     
     private func setupNavigationBar() {
-        title = "Create To Do"
+        title = "Create"
     }
     
     private func setupTextField() {
@@ -44,7 +44,7 @@ class CreationView : UIViewController, CreationViewProtocol {
     }
 }
 
-extension CreationView : UITextFieldDelegate {
+extension TaskCreationView : UITextFieldDelegate {
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         if self.textField == textField {

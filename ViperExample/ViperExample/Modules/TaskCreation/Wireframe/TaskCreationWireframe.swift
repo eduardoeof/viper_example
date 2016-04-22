@@ -1,5 +1,5 @@
 //
-//  CreationWireframe.swift
+//  TaskCreationWireframe.swift
 //  ViperExample
 //
 //  Created by eduardo.ferreira on 4/17/16.
@@ -8,17 +8,17 @@
 
 import UIKit
 
-class CreationWireframe : CreationWireframeProtocol {
+class TaskCreationWireframe : TaskCreationWireframeProtocol {
     
     private weak var navigationController: UINavigationController?
     
-    // MARK: CreationWireframeProtocol
+    // MARK: TaskCreationWireframeProtocol
     
-    class func pushCreation(navigationController: UINavigationController) {
-        let wireframe = CreationWireframe()
-        let view = CreationView()
-        let presenter = CreationPresenter()
-        let interactor = CreationInteractor()
+    class func pushTaskCreation(navigationController: UINavigationController) {
+        let wireframe = TaskCreationWireframe()
+        let view = TaskCreationView()
+        let presenter = TaskCreationPresenter()
+        let interactor = TaskCreationInteractor()
         
         view.presenter = presenter
         presenter.interactor = interactor
@@ -31,7 +31,7 @@ class CreationWireframe : CreationWireframeProtocol {
         navigationController.pushViewController(view, animated: true)
     }
     
-    func popCreation() {
+    func popTaskCreation() {
         navigationController?.popViewControllerAnimated(true)
     }
     

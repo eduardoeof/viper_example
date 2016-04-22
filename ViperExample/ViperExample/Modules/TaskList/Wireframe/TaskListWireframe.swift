@@ -34,7 +34,7 @@ class TaskListWireframe : TaskListWireframeProtocol {
     
     func pushCreation() {
         if let navigationController = navigationController {
-            CreationWireframe.pushCreation(navigationController)
+            TaskCreationWireframe.pushTaskCreation(navigationController)
         }
     }
     
