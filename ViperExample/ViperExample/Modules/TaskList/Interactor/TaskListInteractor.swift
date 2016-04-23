@@ -11,16 +11,16 @@ import Foundation
 class TaskListInteractor : TaskListInteractorInputProtocol {
     weak var presenter: TaskListInteractorOutputProtocol?
     
-    private let dao: TaskDAO
+    private let dao: TaskDAOProtocol
     private let connector: TaskConnectorProtocol
     
-    init(dao: TaskDAO, connector: TaskConnectorProtocol) {
+    init(dao: TaskDAOProtocol, connector: TaskConnectorProtocol) {
         self.dao = dao
         self.connector = connector
     }
 
     convenience init() {
-        self.init(dao: TaskMemoryDAO(), connector: TaskConnectorREST())
+        self.init(dao: TaskDAOMemory(), connector: TaskConnectorREST())
     }
     
     // ListInteractorInputProtocol

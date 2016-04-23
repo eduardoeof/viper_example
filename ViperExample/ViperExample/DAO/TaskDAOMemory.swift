@@ -10,28 +10,28 @@
 
 import Foundation
 
-class TaskMemoryDAO : TaskDAO {
+class TaskDAOMemory : TaskDAOProtocol {
     
     static var list: [Task]?
     
     init() {
-        if TaskMemoryDAO.list == nil {
+        if TaskDAOMemory.list == nil {
             let task1 = Task(text: "Do it")
             let task2 = Task(text: "Do that")
             let task3 = Task(text: "Do everything")
             
-            TaskMemoryDAO.list = [task1, task2, task3]
+            TaskDAOMemory.list = [task1, task2, task3]
         }
     }
     
     // MARK: TaskDAO
     
     func saveTask(task: Task) {
-        TaskMemoryDAO.list?.append(task)
+        TaskDAOMemory.list?.append(task)
     }
     
     func loadTasks() -> [Task]? {
-        return TaskMemoryDAO.list
+        return TaskDAOMemory.list
     }
 
 }

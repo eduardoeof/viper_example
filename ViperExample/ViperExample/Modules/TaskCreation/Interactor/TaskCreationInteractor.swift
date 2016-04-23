@@ -11,14 +11,14 @@ import Foundation
 class TaskCreationInteractor : TaskCreationInteractorInputProtocol {
     weak var presenter: TaskCreationInteractorOutputProtocol?
     
-    let dao: TaskDAO
+    let dao: TaskDAOProtocol
     
-    init(dao: TaskDAO) {
+    init(dao: TaskDAOProtocol) {
         self.dao = dao
     }
     
     convenience init() {
-        self.init(dao: TaskMemoryDAO())
+        self.init(dao: TaskDAOMemory())
     }
     
     // MARK: TaskCreationInteractorInputProtocol

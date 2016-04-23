@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol TaskDAO {
+protocol TaskDAOProtocol {
     func saveTask(task: Task)
     func loadTasks() -> [Task]?
 }

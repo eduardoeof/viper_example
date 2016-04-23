@@ -23,8 +23,6 @@
 		335997C31CC9B6E6000456BF /* TaskCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335997BC1CC9B6E6000456BF /* TaskCreationView.swift */; };
 		335997C41CC9B6E6000456BF /* TaskCreationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 335997BD1CC9B6E6000456BF /* TaskCreationView.xib */; };
 		335997C51CC9B6E6000456BF /* TaskCreationWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335997BF1CC9B6E6000456BF /* TaskCreationWireframe.swift */; };
-		335997CB1CC9B8EC000456BF /* TaskDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335997C71CC9B8EC000456BF /* TaskDAO.swift */; };
-		335997CC1CC9B8EC000456BF /* TaskMemoryDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335997C81CC9B8EC000456BF /* TaskMemoryDAO.swift */; };
 		335997CD1CC9B8EC000456BF /* TaskError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335997CA1CC9B8EC000456BF /* TaskError.swift */; };
 		337C1BA01CC3EFF50095C623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 337C1B9D1CC3EFF50095C623 /* Assets.xcassets */; };
 		337C1BA11CC3EFF50095C623 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 337C1B9E1CC3EFF50095C623 /* Default-568h@2x.png */; };
@@ -32,6 +30,8 @@
 		33E227401CCBBD990028E70F /* TaskConnectorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E2273F1CCBBD990028E70F /* TaskConnectorProtocol.swift */; };
 		33E227441CCBBF0E0028E70F /* TaskConnectorREST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E227431CCBBF0E0028E70F /* TaskConnectorREST.swift */; };
 		33E227461CCBBFE90028E70F /* TaskConnectorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E227451CCBBFE90028E70F /* TaskConnectorError.swift */; };
+		33E2274A1CCBC44C0028E70F /* TaskDAOMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E227481CCBC44C0028E70F /* TaskDAOMemory.swift */; };
+		33E2274B1CCBC44C0028E70F /* TaskDAOProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E227491CCBC44C0028E70F /* TaskDAOProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,8 +73,6 @@
 		335997BC1CC9B6E6000456BF /* TaskCreationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCreationView.swift; sourceTree = "<group>"; };
 		335997BD1CC9B6E6000456BF /* TaskCreationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskCreationView.xib; sourceTree = "<group>"; };
 		335997BF1CC9B6E6000456BF /* TaskCreationWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCreationWireframe.swift; sourceTree = "<group>"; };
-		335997C71CC9B8EC000456BF /* TaskDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDAO.swift; sourceTree = "<group>"; };
-		335997C81CC9B8EC000456BF /* TaskMemoryDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskMemoryDAO.swift; sourceTree = "<group>"; };
 		335997CA1CC9B8EC000456BF /* TaskError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskError.swift; sourceTree = "<group>"; };
 		337C1B9D1CC3EFF50095C623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		337C1B9E1CC3EFF50095C623 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -82,6 +80,8 @@
 		33E2273F1CCBBD990028E70F /* TaskConnectorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskConnectorProtocol.swift; sourceTree = "<group>"; };
 		33E227431CCBBF0E0028E70F /* TaskConnectorREST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskConnectorREST.swift; sourceTree = "<group>"; };
 		33E227451CCBBFE90028E70F /* TaskConnectorError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskConnectorError.swift; sourceTree = "<group>"; };
+		33E227481CCBC44C0028E70F /* TaskDAOMemory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDAOMemory.swift; sourceTree = "<group>"; };
+		33E227491CCBC44C0028E70F /* TaskDAOProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDAOProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,8 +278,8 @@
 		335997C61CC9B8EC000456BF /* DAO */ = {
 			isa = PBXGroup;
 			children = (
-				335997C71CC9B8EC000456BF /* TaskDAO.swift */,
-				335997C81CC9B8EC000456BF /* TaskMemoryDAO.swift */,
+				33E227481CCBC44C0028E70F /* TaskDAOMemory.swift */,
+				33E227491CCBC44C0028E70F /* TaskDAOProtocol.swift */,
 			);
 			path = DAO;
 			sourceTree = "<group>";
@@ -457,9 +457,9 @@
 				335997AE1CC9B454000456BF /* TaskListInteractor.swift in Sources */,
 				335997C01CC9B6E6000456BF /* TaskCreationInteractor.swift in Sources */,
 				335997C31CC9B6E6000456BF /* TaskCreationView.swift in Sources */,
+				33E2274B1CCBC44C0028E70F /* TaskDAOProtocol.swift in Sources */,
 				335997AD1CC9B454000456BF /* Task.swift in Sources */,
 				335997AF1CC9B454000456BF /* TaskListPresenter.swift in Sources */,
-				335997CB1CC9B8EC000456BF /* TaskDAO.swift in Sources */,
 				33E227401CCBBD990028E70F /* TaskConnectorProtocol.swift in Sources */,
 				335997C11CC9B6E6000456BF /* TaskCreationPresenter.swift in Sources */,
 				335997CD1CC9B8EC000456BF /* TaskError.swift in Sources */,
@@ -467,8 +467,8 @@
 				33E227441CCBBF0E0028E70F /* TaskConnectorREST.swift in Sources */,
 				335997B11CC9B454000456BF /* TaskListView.swift in Sources */,
 				3347C1C81CC30EBB00164BE3 /* AppDelegate.swift in Sources */,
-				335997CC1CC9B8EC000456BF /* TaskMemoryDAO.swift in Sources */,
 				335997B01CC9B454000456BF /* TaskListProtocols.swift in Sources */,
+				33E2274A1CCBC44C0028E70F /* TaskDAOMemory.swift in Sources */,
 				335997C51CC9B6E6000456BF /* TaskCreationWireframe.swift in Sources */,
 				335997B31CC9B454000456BF /* TaskListWireframe.swift in Sources */,
 				33E227461CCBBFE90028E70F /* TaskConnectorError.swift in Sources */,
