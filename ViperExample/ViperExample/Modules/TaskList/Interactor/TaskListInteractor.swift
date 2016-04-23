@@ -12,24 +12,34 @@ class TaskListInteractor : TaskListInteractorInputProtocol {
     weak var presenter: TaskListInteractorOutputProtocol?
     
     private let dao: TaskDAO
+    private let connector: TaskConnectorProtocol
     
-    init(dao: TaskDAO) {
+    init(dao: TaskDAO, connector: TaskConnectorProtocol) {
         self.dao = dao
+        self.connector = connector
     }
 
     convenience init() {
-        self.init(dao: TaskMemoryDAO())
+        self.init(dao: TaskMemoryDAO(), connector: TaskConnectorREST())
     }
     
     // ListInteractorInputProtocol
     
     func fetchList() {
-        guard let list = dao.loadTasks() else {
-            presenter?.didFailFetchList(TaskError.EmptyList)
+        if let list = dao.loadTasks() {
+            presenter?.didFetchList(list)
             return
         }
         
-        presenter?.didFetchList(list)
+        connector.fetchTasks({
+            [weak self] list in
+            self?.presenter?.didFetchList(list)
+            
+        }, errorBlock: {
+            [weak self] error in
+            self?.presenter?.didFailFetchList(TaskError.EmptyList)
+        })
+        
     }
     
 }

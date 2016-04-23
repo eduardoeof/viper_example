@@ -29,6 +29,9 @@
 		337C1BA01CC3EFF50095C623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 337C1B9D1CC3EFF50095C623 /* Assets.xcassets */; };
 		337C1BA11CC3EFF50095C623 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 337C1B9E1CC3EFF50095C623 /* Default-568h@2x.png */; };
 		337C1BA21CC3EFF50095C623 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 337C1B9F1CC3EFF50095C623 /* Info.plist */; };
+		33E227401CCBBD990028E70F /* TaskConnectorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E2273F1CCBBD990028E70F /* TaskConnectorProtocol.swift */; };
+		33E227441CCBBF0E0028E70F /* TaskConnectorREST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E227431CCBBF0E0028E70F /* TaskConnectorREST.swift */; };
+		33E227461CCBBFE90028E70F /* TaskConnectorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E227451CCBBFE90028E70F /* TaskConnectorError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +79,9 @@
 		337C1B9D1CC3EFF50095C623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		337C1B9E1CC3EFF50095C623 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		337C1B9F1CC3EFF50095C623 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33E2273F1CCBBD990028E70F /* TaskConnectorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskConnectorProtocol.swift; sourceTree = "<group>"; };
+		33E227431CCBBF0E0028E70F /* TaskConnectorREST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskConnectorREST.swift; sourceTree = "<group>"; };
+		33E227451CCBBFE90028E70F /* TaskConnectorError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskConnectorError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				3347C1C71CC30EBB00164BE3 /* AppDelegate.swift */,
+				33E2273C1CCBBD2E0028E70F /* Connector */,
 				335997C61CC9B8EC000456BF /* DAO */,
 				335997C91CC9B8EC000456BF /* Enums */,
 				337C1BB91CC3F15C0095C623 /* Modules */,
@@ -281,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				335997CA1CC9B8EC000456BF /* TaskError.swift */,
+				33E227451CCBBFE90028E70F /* TaskConnectorError.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -302,6 +310,15 @@
 				3359979F1CC9B454000456BF /* TaskList */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		33E2273C1CCBBD2E0028E70F /* Connector */ = {
+			isa = PBXGroup;
+			children = (
+				33E227431CCBBF0E0028E70F /* TaskConnectorREST.swift */,
+				33E2273F1CCBBD990028E70F /* TaskConnectorProtocol.swift */,
+			);
+			path = Connector;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -443,15 +460,18 @@
 				335997AD1CC9B454000456BF /* Task.swift in Sources */,
 				335997AF1CC9B454000456BF /* TaskListPresenter.swift in Sources */,
 				335997CB1CC9B8EC000456BF /* TaskDAO.swift in Sources */,
+				33E227401CCBBD990028E70F /* TaskConnectorProtocol.swift in Sources */,
 				335997C11CC9B6E6000456BF /* TaskCreationPresenter.swift in Sources */,
 				335997CD1CC9B8EC000456BF /* TaskError.swift in Sources */,
 				335997C21CC9B6E6000456BF /* TaskCreationProtocols.swift in Sources */,
+				33E227441CCBBF0E0028E70F /* TaskConnectorREST.swift in Sources */,
 				335997B11CC9B454000456BF /* TaskListView.swift in Sources */,
 				3347C1C81CC30EBB00164BE3 /* AppDelegate.swift in Sources */,
 				335997CC1CC9B8EC000456BF /* TaskMemoryDAO.swift in Sources */,
 				335997B01CC9B454000456BF /* TaskListProtocols.swift in Sources */,
 				335997C51CC9B6E6000456BF /* TaskCreationWireframe.swift in Sources */,
 				335997B31CC9B454000456BF /* TaskListWireframe.swift in Sources */,
+				33E227461CCBBFE90028E70F /* TaskConnectorError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

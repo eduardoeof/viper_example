@@ -6,6 +6,8 @@
 //  Copyright © 2016 eduardoeof. All rights reserved.
 //
 
+// WARNING: This class doesn't access a database. It just represent a data access layer for this projects.
+
 import Foundation
 
 class TaskMemoryDAO : TaskDAO {
@@ -31,4 +33,5 @@ class TaskMemoryDAO : TaskDAO {
     func loadTasks() -> [Task]? {
         return TaskMemoryDAO.list
     }
+
 }
