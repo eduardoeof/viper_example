@@ -36,7 +36,7 @@ class TaskListWireframe : TaskListWireframeProtocol {
         presenter.view = view
         interactor.presenter = presenter
         
-        let navigationController = UINavigationController.init(rootViewController: view)
+        let navigationController = UINavigationController(rootViewController: view)
         wireframe.navigationController = navigationController
         window.rootViewController = navigationController
     }
