@@ -32,6 +32,8 @@
 		33E227461CCBBFE90028E70F /* TaskConnectorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E227451CCBBFE90028E70F /* TaskConnectorError.swift */; };
 		33E2274A1CCBC44C0028E70F /* TaskDAOMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E227481CCBC44C0028E70F /* TaskDAOMemory.swift */; };
 		33E2274B1CCBC44C0028E70F /* TaskDAOProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E227491CCBC44C0028E70F /* TaskDAOProtocol.swift */; };
+		33E227521CCC37EF0028E70F /* TaskListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E227511CCC37EF0028E70F /* TaskListPresenterTests.swift */; };
+		33E227551CCC4D600028E70F /* XCTestCase+Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E227541CCC4D600028E70F /* XCTestCase+Expectation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		33E227451CCBBFE90028E70F /* TaskConnectorError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskConnectorError.swift; sourceTree = "<group>"; };
 		33E227481CCBC44C0028E70F /* TaskDAOMemory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDAOMemory.swift; sourceTree = "<group>"; };
 		33E227491CCBC44C0028E70F /* TaskDAOProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDAOProtocol.swift; sourceTree = "<group>"; };
+		33E227511CCC37EF0028E70F /* TaskListPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListPresenterTests.swift; sourceTree = "<group>"; };
+		33E227541CCC4D600028E70F /* XCTestCase+Expectation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Expectation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,8 @@
 		3347C1DB1CC30EBB00164BE3 /* ViperExampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				33E227531CCC4D340028E70F /* Extensions */,
+				33E2274C1CCC315E0028E70F /* Modules */,
 				3347C1DC1CC30EBB00164BE3 /* ViperExampleTests.swift */,
 				3347C1DE1CC30EBB00164BE3 /* Info.plist */,
 			);
@@ -321,6 +327,38 @@
 			path = Connector;
 			sourceTree = "<group>";
 		};
+		33E2274C1CCC315E0028E70F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				33E2274D1CCC37640028E70F /* TaskCreation */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		33E2274D1CCC37640028E70F /* TaskCreation */ = {
+			isa = PBXGroup;
+			children = (
+				33E2274E1CCC37870028E70F /* Presenter */,
+			);
+			path = TaskCreation;
+			sourceTree = "<group>";
+		};
+		33E2274E1CCC37870028E70F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				33E227511CCC37EF0028E70F /* TaskListPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		33E227531CCC4D340028E70F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				33E227541CCC4D600028E70F /* XCTestCase+Expectation.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -480,6 +518,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3347C1DD1CC30EBB00164BE3 /* ViperExampleTests.swift in Sources */,
+				33E227551CCC4D600028E70F /* XCTestCase+Expectation.swift in Sources */,
+				33E227521CCC37EF0028E70F /* TaskListPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
