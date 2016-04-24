@@ -45,9 +45,35 @@ class TaskListPresenterTests : XCTestCase {
         waitForExpectations()
     }
     
-    // didTapAddBarButton()
-    // didFetchList
+    func testDidFetchList() {
+        let expectation = self.expectationWithDescription("Check if presenter call view's showList method")
+        
+        let view = TaskListViewMock()
+        view.expectation = expectation
+        
+        let list = createTaskList()
+        
+        presenter.view = view
+        presenter.didFetchList(list)
+        
+        waitForExpectations()
+        
+        XCTAssertEqual(view.list?.count, list.count)
+        XCTAssertEqual(view.list?[0], list[0].text)
+        XCTAssertEqual(view.list?[1], list[1].text)
+        XCTAssertEqual(view.list?[2], list[2].text)
+    }
+    
     // didFailFetchList
+    
+    // MARK: Private
+    
+    private func createTaskList() -> [Task] {
+        let task1 = Task(text: "Do it")
+        let task2 = Task(text: "Do that")
+        let task3 = Task(text: "Do something")
+        return [task1, task2, task3]
+    }
 }
 
 // MARK: Mocks TaskListView
