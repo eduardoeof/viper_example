@@ -10,7 +10,6 @@ import XCTest
 @testable import ViperExample
 
 class TaskListPresenterTests : XCTestCase {
-    
     var presenter: TaskListPresenter!
     
     // MARK: XCTestCase
@@ -64,7 +63,20 @@ class TaskListPresenterTests : XCTestCase {
         XCTAssertEqual(view.list?[2], list[2].text)
     }
     
-    // didFailFetchList
+    func testDidFailFetchList() {
+        let expectation = self.expectationWithDescription("Check if presenter call view's showAlert method")
+        
+        let view = TaskListViewMock()
+        view.expectation = expectation
+        
+        presenter.view = view
+        presenter.didFailFetchList(.EmptyList)
+        
+        waitForExpectations()
+        
+        XCTAssertEqual(view.title, "Error")
+        XCTAssertEqual(view.description, "Your task list is empty! Go and find something to do!")
+    }
     
     // MARK: Private
     
