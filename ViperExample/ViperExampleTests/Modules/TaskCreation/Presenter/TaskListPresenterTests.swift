@@ -34,7 +34,15 @@ class TaskListPresenterTests : XCTestCase {
     }
     
     func testTapAddBarButton() {
+        let expectation = self.expectationWithDescription("Check if presenter call wireframe's pushTaskCreation method")
         
+        let wireframe = TaskListWireframeMock()
+        wireframe.expectation = expectation
+        
+        presenter.wireframe = wireframe
+        presenter.didTapAddBarButton()
+        
+        waitForExpectations()
     }
     
     // didTapAddBarButton()
@@ -71,6 +79,19 @@ class TaskListInteractorMock : TaskListInteractorInputProtocol {
     weak var presenter: TaskListInteractorOutputProtocol?
     
     func fetchList() {
+        expectation?.fulfill()
+    }
+    
+}
+
+// MARK: Mocks TaskListWireframe
+
+class TaskListWireframeMock : TaskListWireframeProtocol {
+    var expectation: XCTestExpectation?
+    
+    static func addTaskListOnWindow(window: UIWindow) {}
+    
+    func pushTaskCreation() {
         expectation?.fulfill()
     }
     
